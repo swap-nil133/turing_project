@@ -46,9 +46,10 @@ export default function LandingScreen({ onEncode, onDecode }: LandingScreenProps
       </div>
 
       {/* Footer Info */}
-      <div className="mt-16 text-center text-xs text-[#7a9ab3] font-mono max-w-xs">
+      <div className="mt-16 text-center text-xs text-[#7a9ab3] font-mono max-w-xs space-y-2">
         <p className="opacity-70">Inspired by WWII Enigma Machines</p>
-        <p className="opacity-70"></p>
+        <p className="opacity-50 text-[10px]">This is an educational recreation and not an authentic Enigma machine simulator. For historical accuracy, please refer to academic sources on cryptography.</p>
+        <p className="opacity-60 text-[10px]">Created with modern web technologies for educational purposes.</p>
       </div>
     </div>
   );
