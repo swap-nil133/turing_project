@@ -96,7 +96,7 @@ export default function EncodeScreen({ onBack }: EncodeScreenProps) {
 
         {/* Key Input */}
         <div>
-          <label className="block text-sm font-mono text-[#00ccff] mb-2">Enter key (e.g., A5)</label>
+          <label className="block text-sm font-mono text-[#00ccff] mb-2">Enter Encryption Key</label>
           <input
             type="text"
             value={key}
@@ -105,14 +105,14 @@ export default function EncodeScreen({ onBack }: EncodeScreenProps) {
               setError('');
             }}
             onKeyPress={handleKeyPress}
-            placeholder="A5"
+            placeholder="e.g.,A5,E19..."
             className="w-full px-4 py-3 bg-[#0f2547] border-2 border-[#1a3a52] rounded-lg text-[#e0e0e0] font-mono text-base placeholder-[#7a9ab3] focus:outline-none focus:border-[#00ff88] transition-colors duration-200"
           />
-          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Key must start with one alphabet followed by a number. Example: A5</p>
+          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Please keep your key secure. It is required to decrypt the message.</p>
         </div>
 
         {/* Error Message */}
-        {error && <div className="p-3 bg-red-500 bg-opacity-20 border border-red-500 rounded-lg text-red-400 text-sm font-mono">{error}</div>}
+        {error && <div className="p-3 bg-red-500/15 bg-opacity-20 border border-red-500/40 rounded-lg text-red-400 text-sm font-mono">{error}</div>}
 
         {/* Generate Button */}
         <button

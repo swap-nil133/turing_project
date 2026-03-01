@@ -108,7 +108,7 @@ export default function DecodeScreen({ onBack }: DecodeScreenProps) {
             placeholder="Your secret Key"
             className="w-full px-4 py-3 bg-[#0f2547] border-2 border-[#1a3a52] rounded-lg text-[#e0e0e0] font-mono text-base placeholder-[#7a9ab3] focus:outline-none focus:border-[#00ccff] transition-colors duration-200"
           />
-          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Enter the key used for encryption (e.g., E7)</p>
+          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Enter the encryption key (e.g., E7)</p>
         </div>
 
         {/* Error Message */}
