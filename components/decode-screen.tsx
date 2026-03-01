@@ -105,20 +105,20 @@ export default function DecodeScreen({ onBack }: DecodeScreenProps) {
               setError('');
             }}
             onKeyPress={handleKeyPress}
-            placeholder="A5"
+            placeholder="Your secret Key"
             className="w-full px-4 py-3 bg-[#0f2547] border-2 border-[#1a3a52] rounded-lg text-[#e0e0e0] font-mono text-base placeholder-[#7a9ab3] focus:outline-none focus:border-[#00ccff] transition-colors duration-200"
           />
-          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Key must start with one alphabet followed by a number. Example: A5</p>
+          <p className="text-xs text-[#7a9ab3] font-mono mt-2">Enter the encryption key (e.g., E7)</p>
         </div>
 
         {/* Error Message */}
-        {error && <div className="p-3 bg-red-500 bg-opacity-20 border border-red-500 rounded-lg text-red-400 text-sm font-mono">{error}</div>}
+        {error && <div className="p-3 bg-red-500/15 bg-opacity-20 border border-red-500/40 rounded-lg text-red-400 text-sm font-mono">{error}</div>}
 
         {/* Generate Button */}
         <button
           onClick={handleGenerate}
           className="w-full py-3 px-4 bg-[#00ccff] text-[#0a1628] font-mono font-semibold rounded-lg hover:bg-[#00bbee] transition-colors duration-200 active:scale-95 animate-glow"
-          style={{ animationDelay: '0.3s' }}
+          style={{ animationDelay: '0.4s' }}
         >
           GENERATE
         </button>
@@ -142,6 +142,8 @@ export default function DecodeScreen({ onBack }: DecodeScreenProps) {
 
             <div>
               <p className="text-xs font-mono text-[#00ccff]">Key used: {key}</p>
+              <p className="text-xs text-muted-foreground opacity-70 font-mono mt-2">
+                If the output appears incorrect or unreadable, please verify that the correct key has been entered.</p>
             </div>
           </div>
         )}
