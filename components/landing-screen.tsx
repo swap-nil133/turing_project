@@ -51,7 +51,7 @@ export default function LandingScreen({ onEncode, onDecode }: LandingScreenProps
         <p className="opacity-60 text-[11px] leading-relaxed">
           This application is not a recreation of the Enigma machine. It is a simplified modular shift cipher created to illustrate foundational principles of classical cryptography inspired by the era of Alan Turing.
         </p>
-        <p className="opacity-70 text-[11px] font-semibold text-[#00ff88]">© 2026 - Developed by Swapnil Sarker</p>
+        <p className="text-[11px] font-semibold text-[#00ff88]" style={{ textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88' }}>© 2026 - Developed by Swapnil Sarker</p>
       </div>
     </div>
   );
