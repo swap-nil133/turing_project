@@ -48,7 +48,7 @@ export default function LandingScreen({ onEncode, onDecode }: LandingScreenProps
       {/* Footer Info */}
       <div className="mt-16 text-center text-xs text-[#7a9ab3] font-mono max-w-xs">
         <p className="opacity-70">Inspired by WWII Enigma Machines</p>
-        <p className="opacity-70">hola</p>
+        <p className="opacity-70"></p>
       </div>
     </div>
   );
