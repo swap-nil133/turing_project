@@ -46,9 +46,13 @@ export default function LandingScreen({ onEncode, onDecode }: LandingScreenProps
       </div>
 
       {/* Footer Info */}
-      <div className="mt-16 text-center text-xs text-[#7a9ab3] font-mono max-w-xs">
-        <p className="opacity-70">Inspired by WWII Enigma Machines</p>
-        <p className="opacity-70">hola</p>
+      <div className="mt-16 text-center text-xs text-[#7a9ab3] font-mono max-w-sm space-y-3">
+        <p className="text-[12px] font-semibold text-[#ffdd00]">⚠️ DISCLAIMER</p>
+        <p className="opacity-80 text-[11px] leading-relaxed">
+          <b>This application is not a recreation of the Enigma machine. It is a simplified modular shift cipher created to illustrate foundational principles of classical cryptography inspired by the era of Alan Turing.</b>
+        </p>
+        <br></br><br></br>
+        <p className="text-[11px] font-semibold text-[#00ff88]" style={{ textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88' }}>© 2026 - Developed by Swapnil Sarker</p>
       </div>
     </div>
   );
