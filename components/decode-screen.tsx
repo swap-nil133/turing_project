@@ -142,6 +142,8 @@ export default function DecodeScreen({ onBack }: DecodeScreenProps) {
 
             <div>
               <p className="text-xs font-mono text-[#00ccff]">Key used: {key}</p>
+              <p className="text-xs text-muted-foreground opacity-70 font-mono mt-2">
+                If the result appears incorrect, please double-check your decryption key.</p>
             </div>
           </div>
         )}
